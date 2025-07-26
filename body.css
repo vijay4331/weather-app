@@ -1,0 +1,82 @@
+/* body.css */
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #80deea);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+  font-weight: 700;
+  color: #007bff;
+  text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.2);
+}
+
+/* Input and Button */
+.input-group input {
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .btn {
+  border-radius: 0 8px 8px 0;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.input-group .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Weather Card */
+#weatherResult.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#weatherResult.card:hover {
+  transform: scale(1.02);
+}
+
+#weatherResult h3 {
+  color: #00796b;
+  font-weight: 600;
+}
+
+/* Weather Info Text */
+#weatherResult p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Error Message */
+#errorMsg {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+  }
+
+  .input-group .btn {
+    font-size: 0.95rem;
+  }
+
+  #weatherResult p {
+    font-size: 1rem;
+  }
+}
